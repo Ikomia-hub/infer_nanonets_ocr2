@@ -90,7 +90,7 @@ class InferNanonetsOcr2(dataprocess.C2dImageTask):
         self.model = AutoModelForImageTextToText.from_pretrained(
             param.model_name,
             dtype=torch_tensor_dtype,
-            attn_implementation="flash_attention_2",
+            # attn_implementation="flash_attention_2",
             device_map=self.device,
             cache_dir=self.model_folder
         )
