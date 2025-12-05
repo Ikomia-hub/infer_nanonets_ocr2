@@ -205,7 +205,7 @@ class InferNanonetsOcr2Factory(dataprocess.CTaskFactory):
                                     "intelligent content recognition and semantic tagging"
         # relative path -> as displayed in Ikomia Studio algorithm tree
         self.info.path = "Plugins/Python/VLM"
-        self.info.version = "1.0.0"
+        self.info.version = "1.0.1"
         self.info.icon_path = "images/icon.png"
         self.info.authors = "Souvik Mandal and Ashish Talewar and Siddhant " \
                             "Thakuria and Paras Ahuja and Prathamesh Juvatkar"
