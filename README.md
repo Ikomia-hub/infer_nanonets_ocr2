@@ -57,7 +57,7 @@ wf = Workflow()
 algo = wf.add_task(name="infer_nanonets_ocr2", auto_connect=True)
 
 # Run on your image  
-wf.run_on(url="https://github.com/NanoNets/Nanonets-OCR2/blob/main/assets/bank_statement.jpg?raw=true")
+wf.run_on(url="https://raw.githubusercontent.com/NanoNets/Nanonets-OCR2/refs/heads/main/assets/bank_statement.jpg")
 
 # Save output .json
 nanonets = algo.get_output(1)
@@ -103,7 +103,7 @@ algo.set_parameters({
 })
 
 # Run on your image  
-wf.run_on(url='https://github.com/Ikomia-dev/notebooks/blob/main/examples/img/img_text_inspiration.jpg?raw=true')
+wf.run_on(url='https://raw.githubusercontent.com/Ikomia-dev/notebooks/refs/heads/main/examples/img/img_text_inspiration.jpg')
 
 # Save output .json
 qwen_output = algo.get_output(1)
@@ -124,7 +124,7 @@ wf = Workflow()
 algo = wf.add_task(name="infer_nanonets_ocr2", auto_connect=True)
 
 # Run on your image  
-wf.run_on(url='https://github.com/Ikomia-dev/notebooks/blob/main/examples/img/img_text_inspiration.jpg?raw=true')
+wf.run_on(url='https://raw.githubusercontent.com/Ikomia-dev/notebooks/refs/heads/main/examples/img/img_text_inspiration.jpg')
 
 # Iterate over outputs
 for output in algo.get_outputs():
